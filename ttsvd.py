@@ -1,8 +1,7 @@
 import math
 import torch
 
-eps = 0.01
-def tt_svd(A, eps):
+def tt_svd(A, eps=0.01):
     d = A.ndim
     B = [None] * d
     C = A.clone()
